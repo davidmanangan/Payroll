@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive>
+    <dir sourceOnDisk="/Users/davidmanangan/workspaces/july-12-workspace/payroll-workspace/Payroll/src/main/webapp" targetInArchive="/"/>
+    <dir sourceOnDisk="/Users/davidmanangan/workspaces/july-12-workspace/payroll-workspace/Payroll/target/classes" targetInArchive="/WEB-INF/classes"/>
+    <file sourceOnDisk="/Users/davidmanangan/.m2/repository/org/glassfish/jersey/media/jersey-media-multipart/2.19/jersey-media-multipart-2.19.jar" targetInArchive="/WEB-INF/lib/jersey-media-multipart-2.19.jar"/>
+    <file sourceOnDisk="/Users/davidmanangan/.m2/repository/org/jvnet/mimepull/mimepull/1.9.5/mimepull-1.9.5.jar" targetInArchive="/WEB-INF/lib/mimepull-1.9.5.jar"/>
+    <file sourceOnDisk="/Users/davidmanangan/.m2/repository/io/jaegertracing/jaeger-client/0.34.0/jaeger-client-0.34.0.jar" targetInArchive="/WEB-INF/lib/jaeger-client-0.34.0.jar"/>
+    <file sourceOnDisk="/Users/davidmanangan/.m2/repository/io/jaegertracing/jaeger-thrift/0.34.0/jaeger-thrift-0.34.0.jar" targetInArchive="/WEB-INF/lib/jaeger-thrift-0.34.0.jar"/>
+    <file sourceOnDisk="/Users/davidmanangan/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar" targetInArchive="/WEB-INF/lib/slf4j-api-1.7.25.jar"/>
+    <file sourceOnDisk="/Users/davidmanangan/.m2/repository/org/apache/thrift/libthrift/0.12.0/libthrift-0.12.0.jar" targetInArchive="/WEB-INF/lib/libthrift-0.12.0.jar"/>
+    <file sourceOnDisk="/Users/davidmanangan/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar" targetInArchive="/WEB-INF/lib/okhttp-3.9.0.jar"/>
+    <file sourceOnDisk="/Users/davidmanangan/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar" targetInArchive="/WEB-INF/lib/okio-1.13.0.jar"/>
+    <file sourceOnDisk="/Users/davidmanangan/.m2/repository/io/jaegertracing/jaeger-core/0.34.0/jaeger-core-0.34.0.jar" targetInArchive="/WEB-INF/lib/jaeger-core-0.34.0.jar"/>
+    <file sourceOnDisk="/Users/davidmanangan/.m2/repository/io/opentracing/opentracing-api/0.31.0/opentracing-api-0.31.0.jar" targetInArchive="/WEB-INF/lib/opentracing-api-0.31.0.jar"/>
+    <file sourceOnDisk="/Users/davidmanangan/.m2/repository/io/opentracing/opentracing-util/0.31.0/opentracing-util-0.31.0.jar" targetInArchive="/WEB-INF/lib/opentracing-util-0.31.0.jar"/>
+    <file sourceOnDisk="/Users/davidmanangan/.m2/repository/io/opentracing/opentracing-noop/0.31.0/opentracing-noop-0.31.0.jar" targetInArchive="/WEB-INF/lib/opentracing-noop-0.31.0.jar"/>
+    <file sourceOnDisk="/Users/davidmanangan/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar" targetInArchive="/WEB-INF/lib/gson-2.8.2.jar"/>
+    <file sourceOnDisk="/Users/davidmanangan/.m2/repository/io/jaegertracing/jaeger-tracerresolver/0.34.0/jaeger-tracerresolver-0.34.0.jar" targetInArchive="/WEB-INF/lib/jaeger-tracerresolver-0.34.0.jar"/>
+    <file sourceOnDisk="/Users/davidmanangan/.m2/repository/io/opentracing/contrib/opentracing-tracerresolver/0.1.5/opentracing-tracerresolver-0.1.5.jar" targetInArchive="/WEB-INF/lib/opentracing-tracerresolver-0.1.5.jar"/>
+    <file sourceOnDisk="/Users/davidmanangan/workspaces/july-12-workspace/payroll-workspace/Payroll/target/tmp/META-INF/MANIFEST.MF" targetInArchive="/META-INF/MANIFEST.MF"/>
+</archive>

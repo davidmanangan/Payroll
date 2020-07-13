@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>iam.davidmanangan</groupId>
+  <artifactId>Payroll</artifactId>
+  <version>1.0</version>
+  <packaging>war</packaging>
+  
+  <name>Payroll</name>
+
+  <properties>
+	    <openliberty.maven.version>3.2</openliberty.maven.version>
+	    <openliberty.version>[19.0.0.9,)</openliberty.version>
+	    <maven.compiler.target>1.8</maven.compiler.target>
+	    <maven.compiler.source>1.8</maven.compiler.source>
+	    <final.name>Payroll</final.name>
+	    <failOnMissingWebXml>false</failOnMissingWebXml>
+        <jakartaee>8.0</jakartaee>
+		<endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.eclipse.microprofile</groupId>
+      <artifactId>microprofile</artifactId>
+      <version>3.3</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+	<dependency>
+	   <groupId>org.glassfish</groupId>
+	   <artifactId>javax.json</artifactId>
+	   <version>1.1</version>
+	   <scope>test</scope>
+	</dependency>
+	<dependency>
+	    <groupId>org.glassfish.jersey.core</groupId>
+	    <artifactId>jersey-common</artifactId>
+	    <version>2.22.2</version>
+	    <scope>test</scope>
+	</dependency>
+	<dependency>
+	    <groupId>org.glassfish.jaxb</groupId>
+	    <artifactId>jaxb-runtime</artifactId>
+	    <version>2.3.2</version>
+	   <scope>test</scope>
+	</dependency>
+	<dependency>
+	    <groupId>org.glassfish.jersey.test-framework.providers</groupId>
+	    <artifactId>jersey-test-framework-provider-grizzly2</artifactId>
+	    <version>2.19</version>
+	    <scope>test</scope>
+	</dependency>
+	<dependency> 
+	    <groupId>org.glassfish.jersey.media</groupId>
+	    <artifactId>jersey-media-multipart</artifactId>
+	    <version>2.19</version>
+	</dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>Payroll</finalName>
+  </build>
+  
+ <profiles>
+    <profile>
+      <id>liberty</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>io.openliberty.tools</groupId>
+            <artifactId>liberty-maven-plugin</artifactId>
+            <version>${openliberty.maven.version}</version>
+            <executions>
+              <execution>
+                <id>package-server</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>create</goal>
+                  <goal>install-feature</goal>
+                  <goal>deploy</goal>
+                  <goal>package</goal>
+                </goals>
+                <configuration>
+                  <outputDirectory>target/wlp-package</outputDirectory>
+                </configuration>
+              </execution>
+            </executions>
+            <configuration>
+              <include>runnable</include>
+              <serverName>${final.name}</serverName>
+              <bootstrapProperties>
+                <project.name>${final.name}</project.name>
+                <jwt.issuer>https://server.example.com</jwt.issuer>
+              </bootstrapProperties>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+      <dependencies>
+        <dependency>
+          <groupId>io.jaegertracing</groupId>
+          <artifactId>jaeger-client</artifactId>
+          <version>0.34.0</version>
+        </dependency>
+      </dependencies>
+    </profile>
+  </profiles>  
+  
+</project>

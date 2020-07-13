@@ -1,0 +1,9 @@
+------WebKitFormBoundarynQAy44maYqRAO9Ay--
+Content-Disposition: form-data; name="file"; filename="empty-test-file.csv"
+Content-Type: text/csv
+
+id,login,name,salary
+1,emp1,ABC,1000.00
+3,emp3,HIJ,-300.00
+4,emp4,KLM,4000.00
+------WebKitFormBoundarynQAy44maYqRAO9Ay
