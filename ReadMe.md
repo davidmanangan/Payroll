@@ -1,4 +1,6 @@
-# TechHunt Coding Assessment - Completed by David Manangan
+# Payroll
+
+A personal practice project that combines Frontend and Backend in one git repository.
 
 ## Tech Stack:
 - Angular 8
